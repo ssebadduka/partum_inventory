@@ -85,9 +85,9 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'desta',
-        'USER': 'root',
-        'PASSWORD': '1234',
+        'NAME': 'awakzfip_desta',
+        'USER': 'awakzfip_desta_user',
+        'PASSWORD': 'jamir1.022',
         'HOST': 'localhost',
         'PORT': '3306',
         # 'ENGINE': 'django.db.backends.postgresql',
