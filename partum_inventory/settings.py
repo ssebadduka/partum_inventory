@@ -83,8 +83,19 @@ WSGI_APPLICATION = 'partum_inventory.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'desta',
+        'USER': 'root',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'desta_db_1',
+        # 'USER':'desta_user',
+        # 'PASSWORD':'jamir1.022',
+        # 'HOST':'database-2.cn1e4u5sqphf.us-east-1.rds.amazonaws.com',
+        # 'PORT':'5432'
     }
 }
 
@@ -119,7 +130,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
